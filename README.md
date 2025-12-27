@@ -48,6 +48,10 @@ The included landing page showcases the domain's potential with:
 - Mobile-optimized layout
 - Professional presentation
 
+### Open Source Landing Page
+
+The landing page code is **open source under the MIT License**. When you purchase VulnBee.com, you get full rights to use, modify, and build upon this code however you like - no restrictions, no attribution required.
+
 ---
 
 ## 💼 Interested in Purchasing?

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Hexagon background -->
+  <polygon points="32,4 54,16 54,40 32,52 10,40 10,16" fill="#FFD60A"/>
+
+  <!-- Bee body (black stripes) -->
+  <ellipse cx="32" cy="30" rx="12" ry="16" fill="#000000"/>
+
+  <!-- Yellow stripes -->
+  <ellipse cx="32" cy="24" rx="12" ry="4" fill="#FFD60A"/>
+  <ellipse cx="32" cy="32" rx="12" ry="4" fill="#FFD60A"/>
+
+  <!-- Wings -->
+  <ellipse cx="24" cy="24" rx="8" ry="10" fill="rgba(255,255,255,0.6)" transform="rotate(-20 24 24)"/>
+  <ellipse cx="40" cy="24" rx="8" ry="10" fill="rgba(255,255,255,0.6)" transform="rotate(20 40 24)"/>
+
+  <!-- Antenna -->
+  <line x1="28" y1="16" x2="26" y2="10" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="36" y1="16" x2="38" y2="10" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="26" cy="10" r="2" fill="#000000"/>
+  <circle cx="38" cy="10" r="2" fill="#000000"/>
+</svg>

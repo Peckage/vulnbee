@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VulnBee.com - Premium cybersecurity domain for sale. Perfect for bug bounty platforms, vulnerability scanners, pentesting tools, and security communities.">
+    <meta name="keywords" content="cybersecurity domain, bug bounty, vulnerability scanner, security domain for sale, VulnBee">
+    <title>VulnBee.com - Premium Cybersecurity Domain For Sale</title>
+    <style>
+        /* ============================================
+           CSS RESET & ROOT VARIABLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --dark-bg: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #2a2a2a;
+            --vibrant-yellow: #FFD60A;
+            --warning-orange: #FF6B00;
+            --neon-green: #39FF14;
+            --cyan-glow: #00FFFF;
+            --purple-accent: #9D4EDD;
+            --text-light: #e0e0e0;
+            --text-muted: #999999;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           HONEYCOMB BACKGROUND PATTERN
+        ============================================ */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark-bg);
+            background-image:
+                repeating-linear-gradient(30deg, transparent, transparent 25px, rgba(255, 214, 10, 0.03) 25px, rgba(255, 214, 10, 0.03) 27px),
+                repeating-linear-gradient(90deg, transparent, transparent 25px, rgba(255, 214, 10, 0.03) 25px, rgba(255, 214, 10, 0.03) 27px),
+                repeating-linear-gradient(150deg, transparent, transparent 25px, rgba(255, 214, 10, 0.03) 25px, rgba(255, 214, 10, 0.03) 27px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ============================================
+           FLOATING HEXAGON DECORATIONS
+        ============================================ */
+        .hexagon-float {
+            position: fixed;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hex-1 {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 5%;
+            background: linear-gradient(135deg, var(--vibrant-yellow), var(--warning-orange));
+            animation: float-slow 12s ease-in-out infinite;
+        }
+
+        .hex-2 {
+            width: 70px;
+            height: 70px;
+            top: 60%;
+            left: 8%;
+            background: var(--neon-green);
+            animation: float-medium 10s ease-in-out infinite 2s;
+        }
+
+        .hex-3 {
+            width: 80px;
+            height: 80px;
+            top: 25%;
+            right: 10%;
+            background: var(--cyan-glow);
+            animation: float-slow 15s ease-in-out infinite 1s;
+        }
+
+        .hex-4 {
+            width: 60px;
+            height: 60px;
+            top: 75%;
+            right: 15%;
+            background: var(--purple-accent);
+            animation: float-medium 11s ease-in-out infinite 3s;
+        }
+
+        .hex-5 {
+            width: 90px;
+            height: 90px;
+            top: 45%;
+            right: 5%;
+            background: linear-gradient(135deg, var(--warning-orange), var(--vibrant-yellow));
+            animation: float-slow 13s ease-in-out infinite 0.5s;
+        }
+
+        @keyframes float-slow {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.08;
+            }
+            50% {
+                transform: translateY(-30px) rotate(10deg);
+                opacity: 0.12;
+            }
+        }
+
+        @keyframes float-medium {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0.08;
+            }
+            33% {
+                transform: translateY(-20px) rotate(5deg) translateX(10px);
+                opacity: 0.1;
+            }
+            66% {
+                transform: translateY(-10px) rotate(-5deg) translateX(-10px);
+                opacity: 0.11;
+            }
+        }
+
+        /* ============================================
+           TWO-COLUMN LAYOUT CONTAINER
+        ============================================ */
+        .main-layout {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        .left-column {
+            flex: 1;
+            width: 65%;
+            padding: 0;
+        }
+
+        .right-column {
+            width: 35%;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.95), rgba(10, 10, 10, 0.95));
+            border-left: 2px solid rgba(255, 214, 10, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Custom scrollbar for sidebar */
+        .right-column::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .right-column::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .right-column::-webkit-scrollbar-thumb {
+            background: rgba(255, 214, 10, 0.3);
+            border-radius: 4px;
+        }
+
+        .right-column::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 214, 10, 0.5);
+        }
+
+        /* ============================================
+           HERO SECTION (LEFT COLUMN)
+        ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        /* CSS Bee Icon */
+        .bee-icon {
+            width: 70px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto 25px;
+            animation: buzz 2.5s ease-in-out infinite;
+        }
+
+        @keyframes buzz {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(3px, -3px); }
+            50% { transform: translate(-2px, 2px); }
+            75% { transform: translate(2px, 3px); }
+        }
+
+        .bee-body {
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(90deg,
+                var(--vibrant-yellow) 0%, var(--vibrant-yellow) 28%,
+                var(--black) 28%, var(--black) 38%,
+                var(--vibrant-yellow) 38%, var(--vibrant-yellow) 62%,
+                var(--black) 62%, var(--black) 72%,
+                var(--vibrant-yellow) 72%
+            );
+            border-radius: 50%;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+        }
+
+        .bee-wing {
+            width: 22px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 50% 50% 50% 0;
+            position: absolute;
+            top: 3px;
+        }
+
+        .bee-wing.left {
+            left: 3px;
+            transform: rotate(-35deg);
+            animation: flap 0.4s ease-in-out infinite;
+        }
+
+        .bee-wing.right {
+            right: 3px;
+            transform: rotate(35deg) scaleX(-1);
+            animation: flap 0.4s ease-in-out infinite 0.2s;
+        }
+
+        @keyframes flap {
+            0%, 100% { opacity: 0.25; transform: rotate(-35deg) translateY(0); }
+            50% { opacity: 0.5; transform: rotate(-35deg) translateY(-3px); }
+        }
+
+        .bee-wing.right {
+            animation: flap-right 0.4s ease-in-out infinite 0.2s;
+        }
+
+        @keyframes flap-right {
+            0%, 100% { opacity: 0.25; transform: rotate(35deg) scaleX(-1) translateY(0); }
+            50% { opacity: 0.5; transform: rotate(35deg) scaleX(-1) translateY(-3px); }
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 5.5rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            letter-spacing: -3px;
+            text-transform: uppercase;
+            position: relative;
+            line-height: 1;
+        }
+
+        .logo .vuln {
+            color: #ffffff;
+            text-shadow:
+                0 0 20px rgba(0, 255, 255, 0.6),
+                0 0 40px rgba(0, 255, 255, 0.3),
+                0 0 60px rgba(0, 255, 255, 0.2);
+        }
+
+        .logo .bee {
+            color: var(--vibrant-yellow);
+            text-shadow:
+                0 0 30px rgba(255, 214, 10, 0.8),
+                0 0 50px rgba(255, 214, 10, 0.4),
+                0 0 80px rgba(255, 214, 10, 0.2);
+            position: relative;
+        }
+
+        /* Honeycomb behind "Bee" */
+        .logo .bee::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130%;
+            height: 130%;
+            background: linear-gradient(135deg, rgba(255, 214, 10, 0.15), rgba(255, 107, 0, 0.15));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            z-index: -1;
+        }
+
+        .tagline {
+            font-size: 1.9rem;
+            color: var(--vibrant-yellow);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .subheadline {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            max-width: 650px;
+            margin: 0 auto 45px;
+            line-height: 1.75;
+            opacity: 0.95;
+        }
+
+        /* Hexagonal CTA Button */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 55px;
+            background: linear-gradient(135deg, var(--vibrant-yellow), var(--warning-orange));
+            color: var(--black);
+            text-decoration: none;
+            font-size: 1.35rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            min-width: 280px;
+            min-height: 90px;
+            transition: all 0.3s ease;
+            box-shadow:
+                0 15px 40px rgba(255, 214, 10, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow:
+                0 20px 60px rgba(255, 214, 10, 0.6),
+                0 0 50px rgba(255, 214, 10, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.5);
+            background: linear-gradient(135deg, var(--warning-orange), var(--vibrant-yellow));
+        }
+
+        /* ============================================
+           RIGHT SIDEBAR - PROJECT IDEAS
+        ============================================ */
+        .sidebar-content {
+            padding: 50px 30px;
+        }
+
+        .sidebar-title {
+            font-size: 1.8rem;
+            color: var(--vibrant-yellow);
+            margin-bottom: 10px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sidebar-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 35px;
+            font-style: italic;
+        }
+
+        .ideas-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .idea-card {
+            background: linear-gradient(135deg, rgba(255, 214, 10, 0.05), rgba(255, 107, 0, 0.03));
+            border: 2px solid rgba(255, 214, 10, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .idea-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 214, 10, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .idea-card:hover::before {
+            left: 100%;
+        }
+
+        .idea-card:hover {
+            border-color: var(--vibrant-yellow);
+            transform: translateX(-5px);
+            box-shadow: 0 8px 25px rgba(255, 214, 10, 0.2);
+            background: linear-gradient(135deg, rgba(255, 214, 10, 0.08), rgba(255, 107, 0, 0.05));
+        }
+
+        .idea-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .idea-title {
+            font-size: 1.15rem;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .idea-tag {
+            font-size: 0.7rem;
+            background: rgba(255, 214, 10, 0.2);
+            color: var(--vibrant-yellow);
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .idea-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* ============================================
+           FULL-WIDTH SECTIONS BELOW HERO
+        ============================================ */
+        .full-width-section {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Divider stripe */
+        .section-divider {
+            width: 100%;
+            height: 6px;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--black) 0px,
+                var(--black) 15px,
+                var(--vibrant-yellow) 15px,
+                var(--vibrant-yellow) 30px
+            );
+        }
+
+        /* Why VulnBee Section */
+        .why-section {
+            padding: 100px 40px;
+            background: linear-gradient(180deg, var(--dark-bg), var(--dark-gray));
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--vibrant-yellow);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '⬡ ⬡ ⬡';
+            display: block;
+            font-size: 1.3rem;
+            margin-top: 15px;
+            color: var(--warning-orange);
+            letter-spacing: 12px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 60px auto 0;
+        }
+
+        .why-card {
+            background: rgba(255, 214, 10, 0.04);
+            border: 2px solid rgba(255, 214, 10, 0.25);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--vibrant-yellow), var(--warning-orange));
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .why-card:hover::before {
+            opacity: 0.3;
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(255, 214, 10, 0.25);
+            border-color: var(--vibrant-yellow);
+        }
+
+        .why-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            filter: drop-shadow(0 0 15px rgba(255, 214, 10, 0.4));
+        }
+
+        .why-title {
+            font-size: 1.4rem;
+            color: var(--vibrant-yellow);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .why-description {
+            font-size: 1rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            opacity: 0.92;
+        }
+
+        /* For Sale Section */
+        .for-sale-section {
+            padding: 100px 40px;
+            background:
+                linear-gradient(135deg, rgba(255, 214, 10, 0.03), transparent),
+                linear-gradient(180deg, var(--dark-gray), #0d0d0d);
+            text-align: center;
+        }
+
+        .sale-title {
+            font-size: 2.8rem;
+            color: var(--vibrant-yellow);
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-shadow: 0 0 40px rgba(255, 214, 10, 0.4);
+        }
+
+        .sale-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, rgba(255, 214, 10, 0.08), rgba(255, 107, 0, 0.05));
+            border: 3px solid rgba(255, 214, 10, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .contact-label {
+            font-size: 1.1rem;
+            color: var(--warning-orange);
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-email {
+            font-size: 1.5rem;
+            color: var(--vibrant-yellow);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .contact-email:hover {
+            color: var(--warning-orange);
+            text-shadow: 0 0 20px rgba(255, 214, 10, 0.6);
+            transform: scale(1.05);
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--neon-green), #2ecc71);
+            color: var(--black);
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            min-width: 220px;
+            min-height: 70px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(57, 255, 20, 0.3);
+            margin: 10px;
+        }
+
+        .cta-secondary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 45px rgba(57, 255, 20, 0.5);
+        }
+
+        .cta-tertiary {
+            background: linear-gradient(135deg, var(--purple-accent), #7209b7);
+            box-shadow: 0 10px 30px rgba(157, 78, 221, 0.3);
+        }
+
+        .cta-tertiary:hover {
+            box-shadow: 0 15px 45px rgba(157, 78, 221, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 50px 40px;
+            background: var(--black);
+            text-align: center;
+            border-top: 4px solid var(--vibrant-yellow);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--black) 0px,
+                var(--black) 12px,
+                var(--vibrant-yellow) 12px,
+                var(--vibrant-yellow) 24px
+            );
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .footer-domain {
+            color: var(--vibrant-yellow);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (max-width: 1024px) {
+            .main-layout {
+                flex-direction: column;
+            }
+
+            .left-column {
+                width: 100%;
+            }
+
+            .right-column {
+                width: 100%;
+                position: relative;
+                height: auto;
+                border-left: none;
+                border-top: 2px solid rgba(255, 214, 10, 0.2);
+            }
+
+            .logo {
+                font-size: 4rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 25px;
+            }
+
+            .logo {
+                font-size: 3rem;
+            }
+
+            .tagline {
+                font-size: 1.4rem;
+            }
+
+            .subheadline {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 16px 40px;
+                min-width: 220px;
+                min-height: 75px;
+            }
+
+            .sidebar-content {
+                padding: 40px 20px;
+            }
+
+            .sidebar-title {
+                font-size: 1.5rem;
+            }
+
+            .why-section,
+            .for-sale-section {
+                padding: 70px 25px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .sale-title {
+                font-size: 2rem;
+            }
+
+            .footer {
+                padding: 40px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2.3rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .idea-card {
+                padding: 16px;
+            }
+
+            .idea-title {
+                font-size: 1.05rem;
+            }
+
+            .contact-box {
+                padding: 30px 20px;
+            }
+
+            .contact-email {
+                font-size: 1.2rem;
+                word-break: break-all;
+            }
+        }
+
+        /* Accessibility - Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hexagon Decorations -->
+    <div class="hexagon-float hex-1"></div>
+    <div class="hexagon-float hex-2"></div>
+    <div class="hexagon-float hex-3"></div>
+    <div class="hexagon-float hex-4"></div>
+    <div class="hexagon-float hex-5"></div>
+
+    <!-- ============================================
+         TWO-COLUMN MAIN LAYOUT
+    ============================================ -->
+    <div class="main-layout">
+        <!-- LEFT COLUMN: Hero Section -->
+        <div class="left-column">
+            <section class="hero">
+                <!-- CSS Bee Icon -->
+                <div class="bee-icon">
+                    <div class="bee-wing left"></div>
+                    <div class="bee-body"></div>
+                    <div class="bee-wing right"></div>
+                </div>
+
+                <!-- Logo -->
+                <h1 class="logo">
+                    <span class="vuln">VULN</span><span class="bee">BEE</span>
+                </h1>
+
+                <!-- Tagline -->
+                <p class="tagline">Buzzing Through Vulnerabilities</p>
+
+                <!-- Subheadline -->
+                <p class="subheadline">
+                    The perfect domain for your next cybersecurity project, bug bounty platform,
+                    vulnerability tool, or security community.
+                </p>
+
+                <!-- CTA Button -->
+                <a href="mailto:martijnmiedema01@gmail.com?subject=Inquiry%20About%20VulnBee.com%20Purchase" class="cta-button">
+                    Buy This Domain
+                </a>
+            </section>
+        </div>
+
+        <!-- RIGHT COLUMN: Sticky Sidebar with Project Ideas -->
+        <aside class="right-column">
+            <div class="sidebar-content">
+                <h2 class="sidebar-title">VulnBee.com Could Become...</h2>
+                <p class="sidebar-subtitle">Explore the endless possibilities</p>
+
+                <div class="ideas-list">
+                    <!-- Idea 1 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Vulnerability Scanner Dashboard</h3>
+                            <span class="idea-tag">SaaS</span>
+                        </div>
+                        <p class="idea-description">
+                            Real-time network and application scanning platform with detailed vulnerability
+                            reports, risk scoring, and automated remediation suggestions.
+                        </p>
+                    </div>
+
+                    <!-- Idea 2 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Bug Bounty Platform</h3>
+                            <span class="idea-tag">Community</span>
+                        </div>
+                        <p class="idea-description">
+                            Connect ethical hackers with companies seeking security testing. Manage bounties,
+                            submissions, payouts, and build a thriving security researcher community.
+                        </p>
+                    </div>
+
+                    <!-- Idea 3 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Penetration Testing Toolkit</h3>
+                            <span class="idea-tag">Red Team</span>
+                        </div>
+                        <p class="idea-description">
+                            Professional suite for red teams to simulate attacks, generate reports, and
+                            manage penetration testing engagements from reconnaissance to exploitation.
+                        </p>
+                    </div>
+
+                    <!-- Idea 4 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Threat Intelligence Hub</h3>
+                            <span class="idea-tag">Analytics</span>
+                        </div>
+                        <p class="idea-description">
+                            Aggregate global CVE databases, threat feeds, and exploit data with interactive
+                            visualizations, real-time alerts, and actionable intelligence.
+                        </p>
+                    </div>
+
+                    <!-- Idea 5 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">DevSecOps Integration Tool</h3>
+                            <span class="idea-tag">DevOps</span>
+                        </div>
+                        <p class="idea-description">
+                            Seamlessly integrate security scans into CI/CD pipelines. Automated SAST, DAST,
+                            and dependency checks that don't slow down development velocity.
+                        </p>
+                    </div>
+
+                    <!-- Idea 6 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Cybersecurity Research Blog</h3>
+                            <span class="idea-tag">Education</span>
+                        </div>
+                        <p class="idea-description">
+                            Build a premier community hub for vulnerability write-ups, exploit techniques,
+                            security tools, CTF challenges, and cutting-edge research discussions.
+                        </p>
+                    </div>
+
+                    <!-- Idea 7 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Responsible Disclosure Portal</h3>
+                            <span class="idea-tag">Enterprise</span>
+                        </div>
+                        <p class="idea-description">
+                            Secure platform for researchers to report vulnerabilities to companies. Manage
+                            disclosure timelines, communications, and maintain transparency with stakeholders.
+                        </p>
+                    </div>
+
+                    <!-- Idea 8 -->
+                    <div class="idea-card">
+                        <div class="idea-header">
+                            <h3 class="idea-title">Security Training Platform</h3>
+                            <span class="idea-tag">Learning</span>
+                        </div>
+                        <p class="idea-description">
+                            Interactive courses, hands-on labs, and certification programs for aspiring
+                            security professionals. From beginner to advanced ethical hacking skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ============================================
+         FULL-WIDTH SECTIONS BELOW MAIN LAYOUT
+    ============================================ -->
+    <div class="full-width-section">
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Why VulnBee Section -->
+        <section class="why-section">
+            <h2 class="section-title">Why VulnBee.com?</h2>
+
+            <div class="why-grid">
+                <!-- Card 1 -->
+                <div class="why-card">
+                    <span class="why-icon">🐝</span>
+                    <h3 class="why-title">Memorable & Brandable</h3>
+                    <p class="why-description">
+                        Brilliant fusion of "vulnerability" and "bee" – instantly memorable, playful yet
+                        professional. Perfect for capturing the bug-hunting spirit of cybersecurity.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="why-card">
+                    <span class="why-icon">💎</span>
+                    <h3 class="why-title">Premium .COM Domain</h3>
+                    <p class="why-description">
+                        Short, pronounceable, and on the premium .com extension. Builds instant trust and
+                        credibility in the competitive cybersecurity market.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="why-card">
+                    <span class="why-icon">🚀</span>
+                    <h3 class="why-title">Instant Expertise Signal</h3>
+                    <p class="why-description">
+                        The name immediately conveys security expertise and technical depth. Your brand
+                        starts with authority from day one.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="why-card">
+                    <span class="why-icon">📈</span>
+                    <h3 class="why-title">Booming Market Potential</h3>
+                    <p class="why-description">
+                        Cybersecurity is one of the fastest-growing industries globally. Position your
+                        venture for success with a domain that commands attention and respect.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- For Sale / Contact Section -->
+        <section class="for-sale-section">
+            <h2 class="sale-title">⬡ This Premium Domain Is For Sale ⬡</h2>
+            <p class="sale-subtitle">
+                Secure VulnBee.com today and launch the next leading cybersecurity platform.
+                Don't miss this opportunity to own a domain that perfectly encapsulates security expertise.
+            </p>
+
+            <div class="contact-box">
+                <p class="contact-label">Inquire Now</p>
+                <a href="mailto:martijnmiedema01@gmail.com?subject=VulnBee.com%20Purchase%20Inquiry" class="contact-email">
+                    martijnmiedema01@gmail.com
+                </a>
+            </div>
+
+            <div>
+                <a href="mailto:martijnmiedema01@gmail.com?subject=VulnBee.com%20Purchase%20Inquiry" class="cta-secondary">
+                    Contact Us
+                </a>
+                <a href="mailto:martijnmiedema01@gmail.com?subject=Offer%20for%20VulnBee.com&body=I%20would%20like%20to%20make%20an%20offer%20for%20VulnBee.com" class="cta-secondary cta-tertiary">
+                    Make an Offer
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-domain">⬡ VulnBee.com ⬡</p>
+            <p class="footer-text">&copy; 2025 VulnBee.com - All Rights Reserved</p>
+            <p class="footer-tagline">Premium Cybersecurity Domain For Sale</p>
+        </footer>
+    </div>
+</body>
+</html>
